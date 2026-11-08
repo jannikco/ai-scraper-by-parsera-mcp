@@ -1,39 +1,62 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "c128713f748a20624880b97d4acc9d10134e86fa10eafd7e21afe35ff0ab86fc",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://api.parsera.org/openapi.json"
-  ],
   "id": "ai-scraper-by-parsera-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "AI Scraper by Parsera MCP setup and connection checker",
-  "description": "Generate AI Scraper by Parsera MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare AI Scraper by Parsera for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-ai-scraper-by-parsera-mcp",
+  "sourceRevision": "5eaa9eb3629f2de6e9b4b14b5ad1b9854f3bec6b000611cda0efa99226de188c",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://api.parsera.org/openapi.json"
+  ],
+  "utility": {
+    "problem": "Prepare AI Scraper by Parsera and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "ai-scraper-by-parsera",
   "appName": "AI Scraper by Parsera",
-  "providerDocs": "https://api.parsera.org/openapi.json",
-  "providerWebsite": "https://parsera.org/",
-  "authentication": {
-    "type": "api_key_header",
-    "requiredCredentialFields": [
-      "api_key"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://parsera.org/docs",
-    "tenantRequired": false,
-    "accountParameterNames": []
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
   },
-  "attributionSlug": "github-ai-scraper-by-parsera-mcp",
   "factory": "leadadapter-pipmcp",
-  "generatorVersion": 1
+  "generatorVersion": 3
 }
