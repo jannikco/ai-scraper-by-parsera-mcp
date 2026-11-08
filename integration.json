@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "c128713f748a20624880b97d4acc9d10134e86fa10eafd7e21afe35ff0ab86fc",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://api.parsera.org/openapi.json"
+  ],
+  "id": "ai-scraper-by-parsera-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "AI Scraper by Parsera MCP setup and connection checker",
+  "description": "Generate AI Scraper by Parsera MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "ai-scraper-by-parsera",
+  "appName": "AI Scraper by Parsera",
+  "providerDocs": "https://api.parsera.org/openapi.json",
+  "providerWebsite": "https://parsera.org/",
+  "authentication": {
+    "type": "api_key_header",
+    "requiredCredentialFields": [
+      "api_key"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://parsera.org/docs",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-ai-scraper-by-parsera-mcp"
+}
